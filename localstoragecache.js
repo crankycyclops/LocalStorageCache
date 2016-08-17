@@ -10,7 +10,7 @@ var LocalStorageCache = {
 	clear: function (key) {
 
 		// silently fail if local storage isn't supported by the browser
-		if ('undefined' === typeof(Storage)) {
+		if ('undefined' === typeof(localStorage)) {
 			return;
 		}
 
@@ -23,7 +23,7 @@ var LocalStorageCache = {
 	get: function (key) {
 
 		// silently fail if local storage isn't supported by the browser
-		if ('undefined' === typeof(Storage)) {
+		if ('undefined' === typeof(localStorage)) {
 			return null;
 		}
 
@@ -50,7 +50,7 @@ var LocalStorageCache = {
 	set: function (key, value, expireTime) {
 
 		// silently fail if local storage isn't supported by the browser
-		if ('undefined' === typeof(Storage)) {
+		if ('undefined' === typeof(localStorage)) {
 			return;
 		}
 
